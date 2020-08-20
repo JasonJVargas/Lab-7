@@ -13,13 +13,18 @@ public class LinkedStack {
 	}
 
 	public void removeHalf() {
-		int half = count/2;
-		LinkedStack stack = new LinkedStack();
-		for(int i = 0; i < half; i++) {
-			stack.push(pop());
-	}
-		System.out.println(stack);
+		LinkedStack tempStack = new LinkedStack();
+		LinkedStack lastStack = new LinkedStack();
+
+		int half = count / 2;
+		for (int i = 0; i < half; i++) {
+			tempStack.push(pop());
 		}
+		for (int i = 0; i < half; i++) {
+			lastStack.push(tempStack.pop());
+		}
+		System.out.println(lastStack);
+	}
 	
 	public void removeBottomHalf() {
 	int half = count/2;

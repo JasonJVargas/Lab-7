@@ -33,7 +33,22 @@ public class Driver {
 		System.out.println(link + "\n" + "We will now remove: " + link.peek());
 		link.pop();
 
-		System.out.println("Nothing left! " + link);
+		System.out.println("\nNothing left! " + link);
+		
+		// Push again for Exercise 2
+		link.push(1);
+		link.push(7);
+		link.push(3);
+		link.push(4);
+		link.push(9);
+		link.push(2);
+
+		System.out.println();
+		System.out.print("Here is the original LinkedStack: ");
+		System.out.println(link);
+
+		System.out.print("Top half of the stack: ");
+		link.removeHalf();
 		
 
 		// Push the int's onto ArrayStack.
@@ -59,17 +74,6 @@ public class Driver {
 		array.pop();
 		System.out.println("ArrayStack now contains " + array.size() + " int's in the stack.");
 		
-		// Push again for Exercise 2
-		link.push(1);
-		link.push(7);
-		link.push(3);
-		link.push(4);
-		link.push(9);
-		link.push(2);
-
-		System.out.println(link);
-
-		link.removeHalf();
 
 	}
 
