@@ -13,13 +13,16 @@ public class LinkedStack {
 	}
 
 	public void removeHalf() {
+		// Adding 2 instances in order to store new stacks
 		LinkedStack tempStack = new LinkedStack();
 		LinkedStack lastStack = new LinkedStack();
-
+		
 		int half = count / 2;
+		// First loop to remove top half and store it into a new stack
 		for (int i = 0; i < half; i++) {
 			tempStack.push(pop());
 		}
+		// Second loop to re order the top half elements correctly. 
 		for (int i = 0; i < half; i++) {
 			lastStack.push(tempStack.pop());
 		}
