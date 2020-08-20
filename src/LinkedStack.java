@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Stack;
 
 // This class implements a Stack ADT as a linked list
 public class LinkedStack {
