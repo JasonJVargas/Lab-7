@@ -49,6 +49,7 @@ public class Driver {
 
 		System.out.print("Top half of the stack: ");
 		link.removeHalf();
+		System.out.println("Time complexity of method removeHalf is: O(1.5N)");
 		
 
 		// Push the int's onto ArrayStack.
