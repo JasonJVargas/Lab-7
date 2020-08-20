@@ -12,7 +12,15 @@ public class LinkedStack {
 		count = 0;
 	}
 
-
+	public void removeHalf() {
+		int half = count/2;
+		LinkedStack stack = new LinkedStack();
+		for(int i = 0; i < half; i++) {
+			stack.push(pop());
+	}
+		System.out.println(stack);
+		}
+	
 	public void removeBottomHalf() {
 	int half = count/2;
 	int intArray[] = new int[half];

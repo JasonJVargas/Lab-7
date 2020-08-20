@@ -69,7 +69,7 @@ public class Driver {
 
 		System.out.println(link);
 
-		link.removeBottomHalf();
+		link.removeHalf();
 
 	}
 
