@@ -12,7 +12,7 @@ public class LinkedStack {
 		count = 0;
 	}
 
-	public void removeHalf() {
+	public void removeBottomHalf() {
 		// Adding 2 instances in order to store new stacks
 		LinkedStack tempStack = new LinkedStack();
 		LinkedStack lastStack = new LinkedStack();
@@ -29,23 +29,7 @@ public class LinkedStack {
 		System.out.println(lastStack);
 	}
 	
-	public void removeBottomHalf() {
-	int half = count/2;
-	int intArray[] = new int[half];
-	for (int i = 0; i < half; i++){
-		intArray[i] = pop();
-	}
-	System.out.println(Arrays.toString(intArray));
-	
-}
-	void makeNewArray() {
-		int half = count/2;
-		int[] newStack = new int[half];
-		for (int i=0; i<half; i++) {
-			newStack[i] = pop();
-		}
-		System.out.println(Arrays.toString(newStack));
-	}
+
 	// Implements the push operation
 	void push(int x) {
 		LinkedNode newNode = new LinkedNode(x);
